@@ -9,15 +9,11 @@ const app = express()
 app.use(cors())
 
 app.get('/fixtures', (req, res) => {
-    const football98FixturesApiCall = {
+    const options = {
         method: 'GET',
-        url: 'https://football98.p.rapidapi.com/premierleague/fixtures',
-        headers: {
-            'X-RapidAPI-Key': process.env.FOOTBALL98_RAPID_API_KEY,
-            'X-RapidAPI-Host': 'football98.p.rapidapi.com'
-        }
+        url: 'https://api-football-standings.azharimm.site/leagues/eng.1/standings?season=2022&sort=asc',
     };
-    axios.request(football98FixturesApiCall).then(function (response){
+    axios.request(options).then(function (response){
         res.json(response.data);
     }).catch(function (error) {
         console.error("football98APIFixtures Error: ", error);
