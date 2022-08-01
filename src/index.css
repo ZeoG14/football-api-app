@@ -1,13 +1,36 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: PremierLeagueSans, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: PremierLeagueSans,
     monospace;
+}
+
+@font-face {
+  font-family: PremierLeagueSans;
+  src: url(../static/PremierLeagueW01-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: PremierLeagueSans;
+  src: url(../static/PremierLeagueW01-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: PremierLeagueSans;
+  src: url(../static/PremierLeagueW01-Light.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: PremierLeagueSans;
+  src: url(../static/PremierLeagueW01-LightIt.woff2);
+  font-weight: 300;
+  font-style: italic;
 }

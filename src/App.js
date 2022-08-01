@@ -1,13 +1,15 @@
 import './App.css';
 import React from 'react';
-import FetchHomeSCreenFixtures from './components/FetchHomeScreenFixtures';
+import StandingsTable from './components/StandingsTable';
+
 
 const App = () => {
   return(
-    <div className="app">
-      <FetchHomeSCreenFixtures />
-    </div>
+    <>
+    <StandingsTable />
+    </>
   )
 }
 
 export default App;
+

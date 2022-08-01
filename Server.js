@@ -8,15 +8,17 @@ require('dotenv').config()
 const app = express()
 app.use(cors())
 
-app.get('/fixtures', (req, res) => {
+app.get('/standings', (req, res) => {
+    const league = req.query._league
+    const year = req.query._year
     const options = {
         method: 'GET',
-        url: 'https://api-football-standings.azharimm.site/leagues/eng.1/standings?season=2022&sort=asc',
+        url: `https://api-football-standings.azharimm.site/leagues/${league}/standings?season=${year}&sort=asc`,
     };
     axios.request(options).then(function (response){
         res.json(response.data);
     }).catch(function (error) {
-        console.error("football98APIFixtures Error: ", error);
+        console.error("Api Call Error: ", error);
     })
 });
 

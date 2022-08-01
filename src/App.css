@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: PremierLeagueSans;
+  src: url(../static/PremierLeagueW01-Regular.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: PremierLeagueSans;
+  src: url(../static/PremierLeagueW01-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: PremierLeagueSans;
+  src: url(../static/PremierLeagueW01-Light.woff2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: PremierLeagueSans;
+  src: url(../static/PremierLeagueW01-LightIt.woff2);
+  font-weight: 300;
+  font-style: italic;
+}
